@@ -12,7 +12,7 @@ import Dashboard from './pages/dashboard/Dashboard';
 
 function App() {
   return (
-    <Router basename="/misso-web">
+    <Router>
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/consumers" component={Consumer} />
