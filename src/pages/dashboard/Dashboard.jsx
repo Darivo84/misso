@@ -26,6 +26,7 @@ import Deposits from './Deposits';
 import Orders from './Orders';
 
 import fire from '../../helpers/db';
+import { useAuth0 } from '@auth0/auth0-react';
 
 function Copyright() {
   return (
@@ -123,6 +124,8 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function Dashboard(props) {
+  const { user, isAuthenticated } = useAuth0()
+
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(false);
 
@@ -167,7 +170,7 @@ export default function Dashboard(props) {
 
   useEffect(() => {
     getUsers();
-  }, []);
+  });
 
   if (loading) {
     return <h1>Loading Data...</h1>;
@@ -203,7 +206,7 @@ export default function Dashboard(props) {
             noWrap
             className={classes.title}
           >
-            MISSO | Dashboard
+            MISSO | Dashboard { isAuthenticated && user.email }
           </Typography>
           <IconButton color="inherit">
             <Badge badgeContent={null} color="secondary">

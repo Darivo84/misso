@@ -1,19 +1,19 @@
 import React, { useEffect, useState } from 'react';
-import Link from '@material-ui/core/Link';
+// import Link from '@material-ui/core/Link';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
-import Table from '@material-ui/core/Table';
-import TableBody from '@material-ui/core/TableBody';
+// import Table from '@material-ui/core/Table';
+// import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
-import TableHead from '@material-ui/core/TableHead';
+// import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Title from './Title';
 
 import fire from '../../helpers/db';
 
-function preventDefault(event) {
-  event.preventDefault();
-}
+// function preventDefault(event) {
+//   event.preventDefault();
+// }
 
 const useStyles = makeStyles({
   depositContext: {
@@ -44,7 +44,7 @@ export default function Deposits() {
 
   useEffect(() => {
     getUsers();
-  }, []);
+  });
 
   if (loading) {
     return <h1>Loading Data...</h1>;
