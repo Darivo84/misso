@@ -14,6 +14,7 @@ import Container from '@material-ui/core/Container';
 
 import { NavLink, Link } from 'react-router-dom';
 
+// import fire from '../../helpers/db';
 import { useAuth0 } from '@auth0/auth0-react';
 
 import Copyright from '../../components/copyright/Copyright';
@@ -99,7 +100,7 @@ const Login = () => {
           </Button>
 
           <Button
-            onClick={() => loginWithRedirect()}
+            onClick={() => loginWithRedirect() && <Link to="/dashboard" />}
             type="submit"
             fullWidth
             variant="contained"
