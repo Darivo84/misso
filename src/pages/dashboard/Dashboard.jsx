@@ -124,7 +124,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function Dashboard(props) {
-  const { user, isAuthenticated } = useAuth0()
+  const {logout} = useAuth0(); 
 
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -206,7 +206,7 @@ export default function Dashboard(props) {
             noWrap
             className={classes.title}
           >
-            MISSO | Dashboard { isAuthenticated && user.email }
+            MISSO | Dashboard
           </Typography>
           <IconButton color="inherit">
             <Badge badgeContent={null} color="secondary">
@@ -237,7 +237,9 @@ export default function Dashboard(props) {
                     onClose={handleClose}
                   >
                     <MenuItem>Profile</MenuItem>
-                    <MenuItem onClick={handleClose}>Logout</MenuItem>
+                    <MenuItem 
+                    onClick={() => logout({ returnTo: window.location.origin && handleClose })}
+                    >Logout</MenuItem>
                   </Menu>
                 </div>
               )}
