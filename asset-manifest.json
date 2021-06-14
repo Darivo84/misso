@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/misso/static/css/main.f4a035c0.chunk.css",
-    "main.js": "/misso/static/js/main.1ed1ec1f.chunk.js",
-    "main.js.map": "/misso/static/js/main.1ed1ec1f.chunk.js.map",
+    "main.js": "/misso/static/js/main.83bf16c9.chunk.js",
+    "main.js.map": "/misso/static/js/main.83bf16c9.chunk.js.map",
     "runtime-main.js": "/misso/static/js/runtime-main.76ababec.js",
     "runtime-main.js.map": "/misso/static/js/runtime-main.76ababec.js.map",
     "static/css/2.b57b7cfd.chunk.css": "/misso/static/css/2.b57b7cfd.chunk.css",
-    "static/js/2.473d2d66.chunk.js": "/misso/static/js/2.473d2d66.chunk.js",
-    "static/js/2.473d2d66.chunk.js.map": "/misso/static/js/2.473d2d66.chunk.js.map",
+    "static/js/2.938f9727.chunk.js": "/misso/static/js/2.938f9727.chunk.js",
+    "static/js/2.938f9727.chunk.js.map": "/misso/static/js/2.938f9727.chunk.js.map",
     "index.html": "/misso/index.html",
     "static/css/2.b57b7cfd.chunk.css.map": "/misso/static/css/2.b57b7cfd.chunk.css.map",
     "static/css/main.f4a035c0.chunk.css.map": "/misso/static/css/main.f4a035c0.chunk.css.map",
-    "static/js/2.473d2d66.chunk.js.LICENSE.txt": "/misso/static/js/2.473d2d66.chunk.js.LICENSE.txt",
+    "static/js/2.938f9727.chunk.js.LICENSE.txt": "/misso/static/js/2.938f9727.chunk.js.LICENSE.txt",
     "static/media/BusinessProfileScreenOnly.90bbe9be.png": "/misso/static/media/BusinessProfileScreenOnly.90bbe9be.png",
     "static/media/Dashboard.0b6a567c.jpg": "/misso/static/media/Dashboard.0b6a567c.jpg",
     "static/media/JoinMICardToday.dcededeb.png": "/misso/static/media/JoinMICardToday.dcededeb.png",
@@ -27,8 +27,8 @@
   "entrypoints": [
     "static/js/runtime-main.76ababec.js",
     "static/css/2.b57b7cfd.chunk.css",
-    "static/js/2.473d2d66.chunk.js",
+    "static/js/2.938f9727.chunk.js",
     "static/css/main.f4a035c0.chunk.css",
-    "static/js/main.1ed1ec1f.chunk.js"
+    "static/js/main.83bf16c9.chunk.js"
   ]
 }
