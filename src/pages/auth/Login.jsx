@@ -105,9 +105,7 @@ const Login = () => {
             variant="contained"
             color="secondary"
             className={classes.submit}
-            // style={{color: 'linear-gradient(45deg, #733BC3 30%, #C64156 90%)'}}
           >
-            {console.log(loginWithRedirect())}
             Login with MISSO
           </Button>
           <Grid container>

@@ -12,6 +12,8 @@ import Container from '@material-ui/core/Container';
 
 import { NavLink } from 'react-router-dom';
 
+import { useAuth0 } from '@auth0/auth0-react';
+
 import Copyright from '../../components/copyright/Copyright';
 
 import logo from '../../images/logo.svg';
