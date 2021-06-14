@@ -2,6 +2,8 @@ import React from 'react'
 import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
 
+import { Link } from 'react-router-dom';
+
 import Navbar from '../components/navbar/Navbar';
 import Copyright from '../components/copyright/Copyright';
 
@@ -70,9 +72,11 @@ const Business = () => {
           <br/>
           <p>Cras ac nisl ut ex volutpat tincidunt. Pellentesque ac arcu non quam hendrerit pellentesque. Integer sit amet orci efficitur, consequat tortor id, rhoncus purus. Donec tincidunt dictum odio vitae mattis. Donec vitae felis ut velit interdum tempor. Nam dignissim metus id hendrerit pulvinar.</p>
           <br />
-          <Button href="/developer" color="primary" variant="outlined" className={classes.link} style={{color: '#fff', background: 'linear-gradient(45deg, #733BC3 30%, #C64156 90%)', left: '-10px'}}>
+          <Link to="/developer">
+          <Button color="primary" variant="outlined" className={classes.link} style={{color: '#fff', background: 'linear-gradient(45deg, #733BC3 30%, #C64156 90%)', left: '-10px'}}>
             Developer
           </Button>
+          </Link>
         </div>
         <div className="contentLeft" style={{ alignItems: 'center', justifyContent: 'center'}}>
           <img src={ProfileScreen} alt="Business Profile" style={{ height: '800px', padding: '50px' }} />
@@ -91,9 +95,11 @@ const Business = () => {
           </p>
           
           <br />
-          <Button href="/consumers" color="primary" variant="outlined" className={classes.link} style={{color: '#fff', background: 'linear-gradient(45deg, #733BC3 30%, #C64156 90%)', left: '-10px'}}>
+          <Link to="/consumers">
+          <Button color="primary" variant="outlined" className={classes.link} style={{color: '#fff', background: 'linear-gradient(45deg, #733BC3 30%, #C64156 90%)', left: '-10px'}}>
             Consumers
           </Button>
+          </Link>
         </div>
       </div>
 

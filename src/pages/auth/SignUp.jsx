@@ -10,6 +10,8 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 
+import { NavLink } from 'react-router-dom';
+
 import Copyright from '../../components/copyright/Copyright';
 
 import logo from '../../images/logo.svg';
@@ -43,9 +45,9 @@ const SignUp = () => {
     <Container component="main" maxWidth="xs">
       <CssBaseline />
       <div className={classes.paper} style={{ background: 'rgba(255,255,255, 0.4)', padding: '25px', borderRadius: '15px' }}>
-      <Link href="/" variant="body2">
+      <NavLink to="/" variant="body2">
         <img src={logo} alt="Logo" style={{height: '100px', paddingTop: '10px'}}/>
-      </Link>
+      </NavLink>
       
         <Avatar className={classes.avatar}>
           <LockOutlinedIcon />

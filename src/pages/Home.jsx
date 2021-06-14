@@ -2,6 +2,8 @@ import React from 'react'
 import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
 
+import { Link } from 'react-router-dom';
+
 import Navbar from '../components/navbar/Navbar';
 import Carousel from '../components/SlideShow/Carousel';
 import Copyright from '../components/copyright/Copyright';
@@ -73,9 +75,11 @@ const Home = () => {
           <br/>
           <p>Cras ac nisl ut ex volutpat tincidunt. Pellentesque ac arcu non quam hendrerit pellentesque. Integer sit amet orci efficitur, consequat tortor id, rhoncus purus. Donec tincidunt dictum odio vitae mattis. Donec vitae felis ut velit interdum tempor. Nam dignissim metus id hendrerit pulvinar.</p>
           <br />
-          <Button href="/consumers" color="primary" variant="outlined" className={classes.link} style={{color: '#fff', background: 'linear-gradient(45deg, #733BC3 30%, #C64156 90%)', left: '-10px'}}>
+          <Link to="/consumers">
+          <Button color="primary" variant="outlined" className={classes.link} style={{color: '#fff', background: 'linear-gradient(45deg, #733BC3 30%, #C64156 90%)', left: '-10px'}}>
             Consumers
           </Button>
+          </Link>
         </div>
       </div>
       <Copyright />

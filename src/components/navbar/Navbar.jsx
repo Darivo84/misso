@@ -6,6 +6,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
 import { makeStyles } from '@material-ui/core/styles';
+import { NavLink } from 'react-router-dom';
 
 // import { Link } from 'react-router-dom'
 import './navbar.css'
@@ -65,27 +66,29 @@ export default function Navbar () {
       <AppBar position="static" color="default" elevation={0} className={classes.appBar} style={{ background: 'linear-gradient(45deg, #733BC3 30%, #C64156 90%)' }}>
         <Toolbar className={classes.toolbar}>
           <Typography variant="h6" color="inherit" noWrap className={classes.toolbarTitle}>
-          <Link variant="button" color="textPrimary" href="/" className={classes.link}>
+          <NavLink variant="button" color="textPrimary" to="/" className={classes.link}>
             <img src={logo} alt="Logo" style={{height: '70px', paddingTop: '10px'}}/>
-          </Link>
+          </NavLink>
           </Typography>
           <nav>
-            <Link variant="button" color="textPrimary" href="/consumers" className={classes.link} style={{color: '#fff' }}>
+            <NavLink variant="button" color="textPrimary" to="/consumers" className={classes.link} style={{color: '#fff', textTransform: 'uppercase'}}>
               Consumer
-            </Link>
-            <Link variant="button" color="textPrimary" href="/business" className={classes.link} style={{color: '#fff'}}>
+            </NavLink>
+            <NavLink variant="button" color="textPrimary" to="/business" className={classes.link} style={{color: '#fff', textTransform: 'uppercase'}}>
               Business
-            </Link>
-            <Link variant="button" color="textPrimary" href="/developer" className={classes.link} style={{color: '#fff'}}>
+            </NavLink>
+            <NavLink variant="button" color="textPrimary" to="/developer" className={classes.link} style={{color: '#fff', textTransform: 'uppercase'}}>
               Developer
-            </Link>
-            <Link variant="button" color="textPrimary" href="/developer" className={classes.link} style={{color: '#fff'}}>
+            </NavLink>
+            <NavLink variant="button" color="textPrimary" to="/developer" className={classes.link} style={{color: '#fff', textTransform: 'uppercase'}}>
               Documentation
-            </Link>
+            </NavLink>
           </nav>
-          <Button href="/login" color="primary" variant="outlined" className={classes.link} style={{color: 'linear-gradient(45deg, #733BC3 30%, #C64156 90%)', background: '#fff'}}>
+          <NavLink to="/login">
+          <Button color="primary" variant="outlined" className={classes.link} style={{color: 'linear-gradient(45deg, #733BC3 30%, #C64156 90%)', background: '#fff'}}>
             Login
           </Button>
+          </NavLink>
         </Toolbar>
       </AppBar>
       </React.Fragment>
