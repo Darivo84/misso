@@ -126,7 +126,7 @@ const useStyles = makeStyles((theme) => ({
 export default function Dashboard(props) {
   const {logout} = useAuth0(); 
 
-  const [users, setUsers] = useState([]);
+  const {setUsers} = useState([]);
   const [loading, setLoading] = useState(false);
 
   const classes = useStyles();
@@ -139,7 +139,7 @@ export default function Dashboard(props) {
   };
   const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
 
-  const [auth, setAuth] = React.useState(true);
+  // const [auth, setAuth] = React.useState(true);
   const [anchorEl, setAnchorEl] = React.useState(null);
   const openAcc = Boolean(anchorEl);
 
@@ -210,7 +210,7 @@ export default function Dashboard(props) {
           </Typography>
           <IconButton color="inherit">
             <Badge badgeContent={null} color="secondary">
-              {auth && (
+              {/* {auth && ( */}
                 <div>
                   <IconButton
                     aria-label="account of current user"
@@ -242,7 +242,7 @@ export default function Dashboard(props) {
                     >Logout</MenuItem>
                   </Menu>
                 </div>
-              )}
+              {/* )} */}
             </Badge>
           </IconButton>
         </Toolbar>
